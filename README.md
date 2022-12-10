@@ -2,12 +2,12 @@
 
 bandit_over_the_wire task
 
-level 1 to 0 :
-trerminal : 
+## level 1 to 0 :
+#### trerminal : 
            ssh bandit0@bandit.labs.overthewire.org -p 2220  
             ls
             cat readme --> password : boJ9jbbUNNfktd78OOpsqOltutMc3MY1
-Learnt : ls --> to show all files 
+#### Learnt : ls --> to show all files 
          cat --> to show what is in the file
 
 
