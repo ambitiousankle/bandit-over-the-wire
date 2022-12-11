@@ -112,7 +112,8 @@ bandit_over_the_wire task
 
 bandit 12 to 13:
 terminal:
-        
+        ls --> data.txt
+         
 
 
 
