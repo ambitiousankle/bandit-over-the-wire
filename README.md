@@ -80,7 +80,7 @@ bandit_over_the_wire task
           ls --> data.txt
           cat data.txt | grep millionth --> millionth TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 #### Learnt :
-           how to grep(find anything specific in a file and piping)
+           how to grep(find anything specific in a file ) and piping.
 
 
 ## bandit 8 to 9:
@@ -89,7 +89,9 @@ bandit_over_the_wire task
          ls --> data.txt
          cat data.txt | sort | uniq -c -u -->  EN632PlfYiZbn3PhVK3XOGSlNInNE00t
 #### Learnt : 
-           uniq -c ,uniq -u,sorting
+           uniq -c (count the number of unique files)
+           uniq -u (show the unique files)
+           sort (sort lines to text)
 
 
 ## bandit 9 to 10:
@@ -98,7 +100,7 @@ bandit_over_the_wire task
         ls --> data.txt
         strings data.txt | grep ====  --> &========== G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
 #### Learnt : 
-           conbert a file into and greping the file
+           convert a file into and greping the file
 
 
 ## bandit 10 to 11:
@@ -108,7 +110,7 @@ bandit_over_the_wire task
         cat data.txt --> VGhlIHBhc3N3b3JkIGlzIDZ6UGV6aUxkUjJSS05kTllGTmI2blZDS3pwaGxYSEJNCg==
         cat data.txt | base64 -d --> 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
 #### Learnt :
-           decode a base64 text
+           decode a base64 text.
 
 
 ## bandit 11 to 12:
