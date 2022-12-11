@@ -124,8 +124,8 @@ bandit_over_the_wire task
            rotation of letter in alphabetical order.
 
 
-bandit 12 to 13:
-terminal:
+## bandit 12 to 13:
+#### terminal:
         ssh bandit12@bandit.labs.overthewire.org -p 2220   
         ls --> data.txt
         mkdir /tmp/break
@@ -179,7 +179,15 @@ terminal:
         gzip -d data9.gz
         ls --> data9
         file data9 --> ascii text
-        cat data9 --> wbWdiBxEir4CE81aPhauu0o6pwRmrDw
+        cat data9 --> wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+#### learnt :
+        decode files like : gzip (gzip -d <file.gz>) , tar (tar -xf <file.tar>) , bzip2 (bzip2 -d <file.bz>) , hexdump (cat <file.txt> | xxd -r <file>)
+
+
+## bandit 13 to 14 :
+           
+
+
         
         
         
