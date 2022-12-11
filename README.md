@@ -2,6 +2,9 @@
 
 bandit_over_the_wire task
 
+## bandit0 0 :
+           ssh --> secure shell
+
 ## bandit 0 to 1 :
 #### trerminal : 
            ssh bandit0@bandit.labs.overthewire.org -p 2220  
@@ -174,7 +177,7 @@ terminal:
         gzip -d data9.gz
         ls --> data9
         file data9 --> ascii text
-        cat data9 --> 
+        cat data9 --> wbWdiBxEir4CE81aPhauu0o6pwRmrDw
         
         
         
