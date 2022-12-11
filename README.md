@@ -2,7 +2,7 @@
 
 bandit_over_the_wire task
 
-## bandit 1 to 0 :
+## bandit 0 to 1 :
 #### trerminal : 
            ssh bandit0@bandit.labs.overthewire.org -p 2220  
             ls
@@ -25,7 +25,7 @@ bandit_over_the_wire task
 #### terminal :
           ssh bandit2@bandit.labs.overthewire.org -p 2220
           cat "spaces in filename" --> aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
-####Learnt :
+#### Learnt :
            how to open files using cat with spaces
 
 
@@ -123,6 +123,62 @@ bandit 12 to 13:
 terminal:
         ssh bandit12@bandit.labs.overthewire.org -p 2220   
         ls --> data.txt
+        mkdir /tmp/break
+        cp data.txt /tmp/break
+        cd /tmp/break
+        ls --> data.txt
+        cat data.txt
+        
+        cat data.txt | xxd -r > data
+        file data --> data: gzip compressed data, was "data2.bin"
+        
+        mv data data2.gz
+        gzip -d data2.gz
+        ls --> data2 
+        file data2 --> data: bzip2 compressed data, block size = 900k
+        
+        mv data2 data3.bz
+        bzip2 -d data3.bz
+        ls --> data3
+        file data3 --> data3: gzip compressed data
+        
+        mv data3 data4.gz
+        gzip -d data4.gz
+        ls --> data4
+        file data4 --> data4: POSIX tar archive 
+        
+        mv data4 data5.tar
+        tar -xf data5.tar
+        ls --> data5.bin
+        file data.bin
+        data5.bin: POSIX tar archive 
+        
+        mv data5.bin data6.tar
+        tar -xf data6.tar
+        ls --> data6.bin
+        file data6.bin
+        data6.bin: bzip2 compressed data, block size = 900k
+        
+        mv data6.bin data7.bz
+        bzip2 -d data7.bz
+        ls --> data7
+        file data7
+        data7: POSIX tar archive 
+        
+        mv data7 data8.tar
+        tar -xf data8.tar
+        ls --> data8.bin
+        file data8.bin --> data8.bin: gzip compressed data
+        
+        mv data8.bin data9.gz
+        gzip -d data9.gz
+        ls --> data9
+        file data9 --> ascii text
+        cat data9 --> 
+        
+        
+        
+
          
 
 
